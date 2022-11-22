@@ -1,0 +1,245 @@
+{
+  "contractName": "NodeRulesProxy",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "enodeId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "enodeHost",
+          "type": "string"
+        },
+        {
+          "internalType": "uint16",
+          "name": "enodePort",
+          "type": "uint16"
+        }
+      ],
+      "name": "connectionAllowed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"enodeId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"enodeHost\",\"type\":\"string\"},{\"internalType\":\"uint16\",\"name\":\"enodePort\",\"type\":\"uint16\"}],\"name\":\"connectionAllowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/NodeRulesProxy.sol\":\"NodeRulesProxy\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/NodeRulesProxy.sol\":{\"keccak256\":\"0xe1cc2d83cab4a0534809db034680d20ffaaf02cff920501ec163240a721f4154\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://86b02e6839a884cd28619d2acf1dca6f146445988a2ab4176fa6b94d9b9019c3\",\"dweb:/ipfs/QmU2fzZu9B8VWsuXboryVAY4zW5ZueqkjyBL8hihKv99Rd\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/*\n * Copyright ConsenSys AG.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with\n * the License. You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on\n * an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the\n * specific language governing permissions and limitations under the License.\n *\n * SPDX-License-Identifier: Apache-2.0\n */\npragma solidity >=0.6.0 <0.9.0;\n\ninterface NodeRulesProxy {\n    function connectionAllowed(\n        string calldata enodeId,\n        string calldata enodeHost,\n        uint16 enodePort\n    ) external view returns (bool);\n}\n",
+  "sourcePath": "/home/ubuntu/permissioning-smart-contracts/contracts/NodeRulesProxy.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/NodeRulesProxy.sol",
+    "exportedSymbols": {
+      "NodeRulesProxy": [
+        2331
+      ]
+    },
+    "id": 2332,
+    "license": "Apache-2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2319,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "621:31:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2331,
+        "linearizedBaseContracts": [
+          2331
+        ],
+        "name": "NodeRulesProxy",
+        "nameLocation": "664:14:16",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "45a59e5b",
+            "id": 2330,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "connectionAllowed",
+            "nameLocation": "694:17:16",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2321,
+                  "mutability": "mutable",
+                  "name": "enodeId",
+                  "nameLocation": "737:7:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2330,
+                  "src": "721:23:16",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2320,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "721:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2323,
+                  "mutability": "mutable",
+                  "name": "enodeHost",
+                  "nameLocation": "770:9:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2330,
+                  "src": "754:25:16",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2322,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "754:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2325,
+                  "mutability": "mutable",
+                  "name": "enodePort",
+                  "nameLocation": "796:9:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2330,
+                  "src": "789:16:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 2324,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "789:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "711:100:16"
+            },
+            "returnParameters": {
+              "id": 2329,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2328,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2330,
+                  "src": "835:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2327,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "835:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "834:6:16"
+            },
+            "scope": 2331,
+            "src": "685:156:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2332,
+        "src": "654:189:16",
+        "usedErrors": []
+      }
+    ],
+    "src": "621:223:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.6+commit.11564f7e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-11-14T21:08:03.767Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
